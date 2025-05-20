@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drupi | Formulario CTV</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="toastContainer"></div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://www.drupi.io/" target="_blank" rel="noopener noreferrer">
+                    <svg width="100" height="45" viewBox="0 0 71 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.58414 23H0.694141V1.07H8.37414C14.8541 1.07 19.3241 5.54 19.3241 12.08C19.3241 18.53 14.9441 23 8.58414 23ZM8.01414 4.61H4.53414V19.46H8.22414C12.6041 19.46 15.2741 16.64 15.2741 12.08C15.2741 7.43 12.5441 4.61 8.01414 4.61ZM30.6565 8.12V11.51H29.3065C26.6665 11.51 25.0165 12.92 25.0165 15.8V23H21.3565V8.21H24.8065L25.0165 10.37C25.6465 8.9 27.0565 7.91 29.0365 7.91C29.5465 7.91 30.0565 7.97 30.6565 8.12ZM42.1793 8.18H45.8393V23H42.4493L42.1793 21.02C41.2793 22.43 39.3593 23.39 37.3793 23.39C33.9593 23.39 31.9493 21.08 31.9493 17.45V8.18H35.6093V16.16C35.6093 18.98 36.7193 20.12 38.7593 20.12C41.0693 20.12 42.1793 18.77 42.1793 15.95V8.18ZM48.6149 29.87V8.18H52.0049L52.2449 10.43C53.1449 8.72 55.0949 7.73 57.3449 7.73C61.5149 7.73 64.2749 10.76 64.2749 15.41C64.2749 20.03 61.7549 23.39 57.3449 23.39C55.1249 23.39 53.2049 22.52 52.2749 21.02V29.87H48.6149ZM52.3049 15.59C52.3049 18.26 53.9549 20.09 56.4749 20.09C59.0549 20.09 60.5849 18.23 60.5849 15.59C60.5849 12.95 59.0549 11.06 56.4749 11.06C53.9549 11.06 52.3049 12.92 52.3049 15.59ZM68.0144 5.21C66.7544 5.21 65.7644 4.22 65.7644 2.99C65.7644 1.76 66.7544 0.8 68.0144 0.8C69.2144 0.8 70.2044 1.76 70.2044 2.99C70.2044 4.22 69.2144 5.21 68.0144 5.21ZM66.1844 23V8.18H69.8444V23H66.1844Z" fill="black" />
+                    </svg>
+                </a>
+            </div>
+            <h1>Formulario CTV</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form id="formulario">
+            <input type="hidden" id="email" name="email" value="matias@drupi.com" />
+            <input type="hidden" name="uniqueId" id="uniqueIdInput" />
+            <input type="hidden" name="BG_Color" value="FF5733" />
+
+            <label for="texto1">Texto principal</label>
+            <input type="text" id="texto1" name="texto1" required />
+
+            <label>Logo marca</label>
+            <div class="file-upload">
+                <label for="logo_marca" class="custom-file-label">Subir JPG o PNG</label>
+                <input type="file" id="logo_marca" name="logo_marca" accept="image/png, image/jpeg" required />
+            </div>
+
+            <label>Escenas Portada</label>
+            <div class="file-upload">
+                <label for="escena1portada1" class="custom-file-label">Escena 1 Portada 1</label>
+                <input type="file" name="escena1portada1" id="escena1portada1" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada2" class="custom-file-label">Escena 1 Portada 2</label>
+                <input type="file" name="escena1portada2" id="escena1portada2" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada3" class="custom-file-label">Escena 1 Portada 3</label>
+                <input type="file" name="escena1portada3" id="escena1portada3" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada4" class="custom-file-label">Escena 1 Portada 4</label>
+                <input type="file" name="escena1portada4" id="escena1portada4" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada5_inicio_central" class="custom-file-label">Escena 1 Portada 5 Inicio Central</label>
+                <input type="file" name="escena1portada5_inicio_central" id="escena1portada5_inicio_central" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada6" class="custom-file-label">Escena 1 Portada 6</label>
+                <input type="file" name="escena1portada6" id="escena1portada6" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada7" class="custom-file-label">Escena 1 Portada 7</label>
+                <input type="file" name="escena1portada7" id="escena1portada7" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada8" class="custom-file-label">Escena 1 Portada 8</label>
+                <input type="file" name="escena1portada8" id="escena1portada8" accept="image/*" required />
+            </div>
+            <div class="file-upload">
+                <label for="escena1portada9" class="custom-file-label">Escena 1 Portada 9</label>
+                <input type="file" name="escena1portada9" id="escena1portada9" accept="image/*" required />
+            </div>
+
+            <label>Logos Escenas</label>
+            <div class="file-upload">
+              <label for="logo1escena02" class="custom-file-label">Logo 1 Escena 02</label>
+              <input type="file" name="logo1escena02" id="logo1escena02" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo2escena02" class="custom-file-label">Logo 2 Escena 02</label>
+              <input type="file" name="logo2escena02" id="logo2escena02" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo1escena03" class="custom-file-label">Logo 1 Escena 03</label>
+              <input type="file" name="logo1escena03" id="logo1escena03" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo1escena04" class="custom-file-label">Logo 1 Escena 04</label>
+              <input type="file" name="logo1escena04" id="logo1escena04" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo2escena04" class="custom-file-label">Logo 2 Escena 04</label>
+              <input type="file" name="logo2escena04" id="logo2escena04" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo3escena04" class="custom-file-label">Logo 3 Escena 04</label>
+              <input type="file" name="logo3escena04" id="logo3escena04" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo1escena05" class="custom-file-label">Logo 1 Escena 05</label>
+              <input type="file" name="logo1escena05" id="logo1escena05" accept="image/*" required/>
+            </div>
+            <div class="file-upload">
+              <label for="logo1escena06" class="custom-file-label">Logo 1 Escena 06</label>
+              <input type="file" name="logo1escena06" id="logo1escena06" accept="image/*" required/>
+            </div>
+             <div class="file-upload">
+              <label for="logo2escena06" class="custom-file-label">Logo 2 Escena 06</label>
+              <input type="file" name="logo2escena06" id="logo2escena06" accept="image/*" required/>
+            </div>
+
+            <label>Videos Escenas (Links de Instagram)</label>
+            <input type="url" name="video1escena02" placeholder="Video 1 Escena 02" required />
+            <input type="url" name="video2escena02" placeholder="Video 2 Escena 02" required />
+            <input type="url" name="video1escena03" placeholder="Video 1 Escena 03" required />
+            <input type="url" name="video1escena04" placeholder="Video 1 Escena 04" required />
+            <input type="url" name="video2escena04" placeholder="Video 2 Escena 04" required />
+            <input type="url" name="video3escena04" placeholder="Video 3 Escena 04" required />
+            <input type="url" name="video1escena05" placeholder="Video 1 Escena 05" required />
+            <input type="url" name="video1escena06" placeholder="Video 1 Escena 06" required />
+            <input type="url" name="video2escena06" placeholder="Video 2 Escena 06" required />
+
+            <label for="video_cierre_escena08">Video Cierre Escena 08</label>
+            <div class="file-upload">
+              <label for="video_cierre_escena08" class="custom-file-label">Subir Archivo de Video</label>
+              <input type="file" id="video_cierre_escena08" name="video_cierre_escena08" accept="video/*" required />
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="uniqueId"></div>
+    </div>
+    <script>
+        const webhookUrl = "https://hook.us2.make.com/pqoiih7a4o05b6wtukb9xfs847ygpq20";
+        const fileInputs = document.querySelectorAll("input[type='file']");
+        fileInputs.forEach((input) => {
+            input.addEventListener("change", () => {
+                const label = document.querySelector(`label[for="${input.id}"]`);
+                const fileName = input.files.length > 0 ? input.files[0].name : "Subir JPG o PNG";
+                if (label) label.textContent = fileName;
+            });
+        });
+
+        function generateId() {
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+
+        let uniqueId = generateId(); // Ahora se genera automáticamente al cargar
+        document.getElementById("uniqueId").innerText = `ID = ${uniqueId}`;
+        document.getElementById("uniqueIdInput").value = uniqueId;
+
+
+        document.getElementById("formulario").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form); // Esto recopila automáticamente todos los campos con un atributo 'name'
+
+            // Asegurarse de que uniqueId se envíe correctamente, ya que se maneja por separado
+            formData.set("uniqueId", uniqueId);
+
+            console.log("Datos del formulario:");
+            for (let [key, value] of formData.entries()) {
+                console.log(`${key}: ${value instanceof File ? value.name : value}`);
+            }
+
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    showMessage("Formulario enviado correctamente!", "success");
+                    form.reset();
+                    // Generar un nuevo uniqueId después de un envío exitoso, según la lógica anterior
+                    uniqueId = generateId();
+                    document.getElementById("uniqueId").innerText = `ID = ${uniqueId}`;
+                    document.getElementById("uniqueIdInput").value = uniqueId;
+                } else {
+                    showMessage("Error al enviar el formulario", "error");
+                }
+            } catch (err) {
+                console.error("Error en el envío:", err);
+                showMessage("Error de red al enviar el formulario", "error");
+            }
+        });
+
+        function showMessage(message, type = "success") {
+            const toast = document.createElement("div");
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            const container = document.getElementById("toastContainer");
+            container.appendChild(toast);
+            // Activar animación
+            requestAnimationFrame(() => {
+                toast.classList.add("show");
+            });
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                toast.classList.remove("show");
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
