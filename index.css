@@ -1,5 +1,6 @@
+/* Tipografía base */
 * {
-  font-family: -apple-system, BlinkMacMacFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -19,8 +20,10 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  background: #fafafa;
 }
 
+/* === Header === */
 header {
   width: 100%;
   padding-top: 1rem;
@@ -59,6 +62,7 @@ header h1 {
   }
 }
 
+/* === Contenedor principal === */
 .container {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -68,7 +72,7 @@ header h1 {
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   position: relative;
   color: #333;
 }
@@ -79,6 +83,7 @@ header h1 {
   }
 }
 
+/* === Formularios === */
 label,
 select,
 input,
@@ -114,6 +119,7 @@ textarea {
   padding: 5px;
 }
 
+/* === Botón enviar === */
 button {
   background: #2563eb;
   color: #fff;
@@ -142,12 +148,14 @@ button:hover {
   }
 }
 
+/* === ID generado === */
 #uniqueId {
   color: #555;
   font-size: 10px;
   text-align: right;
 }
 
+/* === Botón upload === */
 .file-upload {
   display: flex;
   gap: 0.5rem;
@@ -170,6 +178,7 @@ button:hover {
   display: none;
 }
 
+/* === Toasts === */
 #toastContainer {
   position: fixed;
   top: 50px;
