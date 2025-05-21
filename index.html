@@ -24,8 +24,8 @@
 
   <div class="container">
     <form id="formulario">
-      <input type="hidden" name="email" value="matias@drupi.com" />
-      <input type="hidden" name="BG_Color" value="FF5733" />
+      <input type="hidden" name="email" value="matias@drupi.io" />
+
 
       <label for="texto1">Texto principal</label>
       <input type="text" id="texto1" name="texto1" required />
@@ -77,6 +77,9 @@
         <label for="video_cierre_escena08" class="custom-file-label">Subir Archivo de Video</label>
         <input type="file" id="video_cierre_escena08" name="video_cierre_escena08" accept="video/*" required />
       </div>
+
+      <label for="BG_Color">Color de fondo (hex sin #)</label>
+        <input type="text" id="BG_Color" name="BG_Color" value="FF5733" required />
 
       <button type="submit">Enviar</button>
     </form>
